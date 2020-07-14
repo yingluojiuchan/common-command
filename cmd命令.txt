@@ -1,0 +1,7 @@
+
+vue ui
+
+
+git init 当前默认下载路径
+cd f: 进入f盘符
+cd F:\git库 进入文件

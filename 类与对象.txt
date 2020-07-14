@@ -1,0 +1,27 @@
+class 类名{
+    this.属性名=值
+constructor(参数名){      //同python__init__函数，实例化即执行
+	函数体
+         }
+    方法名(参数名){   //方法名前不需要function关键字
+              函数体
+         }
+}
+var 对象名=new 类名(参数名);//调用属性、方法同python  参数传给constrctor
+class 类名 extends 父类名{
+       constructor(参数名){     //子类继承父类、父类的父类.......的所有属性、方法，如果重名，父类的会被子类覆盖
+	函数体
+	super（参数名）  //调用父类 constructor函数
+         }
+}
+class  类名():
+      self.属性名=值
+	def __init__(self,参数）:
+	    函数体
+对象名=类名（参数）参数传给__init__
+class 类名（父类名）:
+                def __init__(self,参数）:
+	    函数体
+	     super(父类名，self).父类方法名(参数）//调用父类方法
+
+	
