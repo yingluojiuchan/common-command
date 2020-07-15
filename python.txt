@@ -1,5 +1,5 @@
 C:\Program Files\NVIDIA Corporation\NVSMI>nvidia-smi            查看GPU此时的使用情况      
-				           watch nvidia-smi   实时返回GPU使用情况
+C:\Program Files\NVIDIA Corporation\NVSMI>watch nvidia-smi   实时返回GPU使用情况
 jupyter-lab
 pip install --upgrade tensorlayer 更新库
 F:\Anaconda3\Lib\site-packages\tensorflow_core\python\keras\datasetspip list | findstr numpy 查看numpy版本
