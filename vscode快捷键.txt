@@ -1,0 +1,6 @@
+vscode 代码补全按enter or tab     vs  studio按tab
+ctrl+/ 单行注释    这行都变注释    /必须是26母键盘上的/
+shift+alt+a 选中的内容注释
+ctrl+D 向下复制一行
+ctrl+~ vscode打开终端
+vs 2019 编辑.移除行	Ctrl+Delete

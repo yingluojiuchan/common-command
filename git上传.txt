@@ -1,9 +1,15 @@
+一、git基础设置
+1.设置用户名     git config --global user.name 'yingluojiuchan'
+2.设置用户名邮箱     git config --global user.name '1925709544@qq.com'
+3.查看设置      git config --list
+ git config --global     表示这台机器上的所有repository都会使用使用这个配置，当然可以对某个repository制定不同的user name和email
+git右键粘贴
 一、设置SSH
 1.进入自己的项目文件下右键选择Git Bash Here打开git命令端
-2.输入命令：ssh-keygen -t rsa -C "1925709544@qq.com"  多按几次enter
+2.输入命令：ssh-keygen -t rsa -C "1925709544@qq.com" （ssh-keygen -t rsa -C "user@qq.com"  ） 多按几次enter
 3.记事本打开c/Users/HP-VIP/.ssh/id_rsa，复制里面的密钥
 4.打开github的Setttings
-5.打开SSH and GPG keys
+5.打开Setttings的SSH and GPG keys
 6.点击New SSH key，粘贴密钥
 7.git输入:ssh -T git@github.com     检测配置是否成功 出现success就成功   
 若出现ssh: connect to host github.com port 22: Connection timed out：
@@ -16,29 +22,34 @@ PreferredAuthentications publickey
 IdentityFile ~/.ssh/id_rsa
 Port 443
 
-
-一、建立本地仓库
+二、建立本地仓库
 1.进入自己的项目文件下右键选择Git Bash Here打开git命令端
 2.输入git init     文件夹下多了一个.git文件夹 ,.git目录里存储着Git管理当前目录内容所需要的仓库数据。如果你看不到，是因为它默认是隐藏文件，那你就需要设置一下让隐藏文件可见
 3.输入git add .      将项目中的所有文件添加到暂存区
-4.输入git commit -m“注释” 将文件提交到本地仓库，引号里是提交的日志
+4.输入git commit -m“提交描述” 将文件提交到版本库（本地仓库），引号里是提交的日志
 5.输入git log        查看提交日志（包括什么人在上面时候进行了提交和合并，及操作前后有怎样的区别）
-二、创建github仓库
+三、创建github仓库
 1.登录github账户，选择New repository
 2.根据提示创建仓库
-3.获取仓库SSH地址或https地址并复制，输入指令：git remote add origin https://github.com/xxxx/xxx.git或ssh地址（https://github.com/xxxx/xxx.git就是仓库地址 ），关联github仓库
-5.如果有弹窗对话框需要输入你的github账户密码，按照提示输入即可；如果没有请进行下一步
-6.输入指令：git push -u origin master   把本地库的所有内容推送到远程仓库（也就是Github）上了
+3.获取仓库SSH地址或https地址并复制，输入指令：git remote add [远程主机名] [url]
+git remote add orign [url]
+url可以是ssh或htttp地址
+显示添加远程主机(远程仓库），可以指定任意数量远端主机
+4.如果有弹窗对话框需要输入你的github账户密码，按照提示输入即可（仅第一次需要）；如果没有请进行下一步
+5.输入指令：git push [远程主机名] [远程分支]     把版本库的所有内容推送到远程仓库（Github）上
+git push -u [远程主机名] [远程分支]      如果当前分支（本地分支）与多个主机存在追踪关系，-u选项指定远程主机名为当前分支默认主机，以后就可以不加任何参数使用git push
+git push -u origin master   
 
-
-三、更新文件到github
-1.输入指令：git add 文件名称或者git add .
-·  git add -A  提交所有变化
-·  git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
-·  git add .  提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
-2.输入指令：git commit -m "这是注释内容"
-3.这一步从本地仓库或本地分支获取并集成(整合)，输入指令：git pull origin master
-4.如果过程中出现‘please enter a commit message…’,首先按下esc退出键然后输入 ：wq即可
-5.输入指令：git push -u origin master
+四、更新文件到github
+1.输入指令：
+git add 文件名称    提交新文件
+git add -A  提交所有变化
+git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
+git add .  提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
+2.输入指令：git commit -m "提交描述"           提交到版本库
+3.输入指令：git pull <远程主机名> <远程分支名>:<本地分支名>      若只有一个分支，去除:<本地分支名>
+git pull origin master      取回远程主机某个分支的更新，再与本地的指定分支合并
+如果过程中出现‘please enter a commit message…’,首先按下esc退出键然后输入 ：wq即可
+4.输入指令：git push -u origin master   把版本库的所有内容推送到远程仓库（Github）上
 按照这些更新步骤走完之后刷新你的github主页就能看到文件已经推送到仓库，从仓库中的文件推送时间就可以知道。
 如果你发现文件的推送并不是你此次更新的时间而是上次推送时间，证明你并没有更新成功，请仔细检查再重新敲一遍更新流程即可。
