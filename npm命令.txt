@@ -7,3 +7,13 @@ LTS 最新稳定版 current 最新版
 npm 是依附于 node.js 的，我们可以去它的官网 https://nodejs.org/en/download/ 下载安装 node.js。下载好 node.js, npm 也就有了，
 cnpm install webpack@3.6.0 -g  安装3.6.0的webpack   -g是全局安装的意思
 webpack-版本查看包包版
+cnpm install vue@2.6.11 -g
+cnpm install -g @vue/cli
+npm -v   查看npm版本
+npm version 查看npm和npm包版本
+npm search 包名   搜索包含包名的包
+npm install/i 包名 -g 全局模式安装包
+npm install/i 包名  在当前目录安装包
+npm init  生成一个package.json
+npm remove/r 包名   删除包
+npm install/i      根据package.json安装依赖项包 

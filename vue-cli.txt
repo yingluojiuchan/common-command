@@ -1,0 +1,27 @@
+1.vue create testapp   传建一个名叫testapp 的项目
+2.按下箭头选择Manually select features，然后enter       手动配置
+3.Babel   编译，空格键选择/取消
+TypeScript         使用TypeScript
+  Progresssive Web App (PWA) Support  渐进式web开发
+Vuex 状态管理
+CSS Pre+-processors    css预处理器
+Linter/Formatter  代码格式化处理
+Unit Testing    单元测试
+E2E Testing 端到端测试
+4.In dedicated config files   所有配置在多个文件
+In package.json   所有配置在一个文件
+5.Save this as a preset for future projects?是否为以后的项目保存为预先设置
+6.public文件夹放置静态文件
+src文件夹     源代码，在这写代码
+src文件夹下babel.config.js   编译配置
+package.json中的dependencies    开发的包依赖
+		scripts的serve      效果预览命令，热加载
+              			build      编译命令（把App.vue转化为html）
+main.js   入口文件
+dist文件夹   是编译好部署到服务器上的代码
+
+
+
+1.vue ui 打开可视化界面
+2.点击创建
+3.点击在此创建新项目

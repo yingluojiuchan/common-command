@@ -1,3 +1,4 @@
 vue ui
 cd f: 进入f盘符
 cd F:\git库 进入文件
+在Windows资源管理器的路径框输入cmd，则会打开当前路径下的cmd
