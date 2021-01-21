@@ -17,13 +17,13 @@ IdentityFile ~/.ssh/id_rsa
 Port 443
 
 
-一、建立本地仓库
+二、建立本地仓库
 1.进入自己的项目文件下右键选择Git Bash Here打开git命令端
 2.输入git init     文件夹下多了一个.git文件夹 ,.git目录里存储着Git管理当前目录内容所需要的仓库数据。如果你看不到，是因为它默认是隐藏文件，那你就需要设置一下让隐藏文件可见
 3.输入git add .      将项目中的所有文件添加到暂存区
 4.输入git commit -m“注释” 将文件提交到本地仓库，引号里是提交的日志
 5.输入git log        查看提交日志（包括什么人在上面时候进行了提交和合并，及操作前后有怎样的区别）
-二、创建github仓库
+三、创建github仓库
 1.登录github账户，选择New repository
 2.根据提示创建仓库
 3.获取仓库SSH地址或https地址并复制，输入指令：git remote add origin https://github.com/xxxx/xxx.git或ssh地址（https://github.com/xxxx/xxx.git就是仓库地址 ），关联github仓库
@@ -31,7 +31,7 @@ Port 443
 6.输入指令：git push -u origin master   把本地库的所有内容推送到远程仓库（也就是Github）上了
 
 
-三、更新文件到github
+四、更新文件到github
 1.输入指令：git add 文件名称或者git add .
 ·  git add -A  提交所有变化
 ·  git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
