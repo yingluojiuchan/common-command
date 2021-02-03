@@ -4,5 +4,11 @@ nvm use 13.6.0 使用node13.6.0 nvm中必须指定使用哪个版本的node
 nvm ls available 查看node发行版本
 nvm list 查看已下载node版本
 LTS 最新稳定版 current 最新版
+<<<<<<< HEAD
 npm 是依附于 node.js 的，我们可以去它的官网 https://nodejs.org/en/download/ 下载安装 node.js 下载好 node.js, npm 也就有了，
 
+=======
+npm 是依附于 node.js 的，我们可以去它的官网 https://nodejs.org/en/download/ 下载安装 node.js。下载好 node.js, npm 也就有了，
+cnpm install webpack@3.6.0 -g  安装3.6.0的webpack   -g是全局安装的意思
+webpack-版本查看包包版
+>>>>>>> cb4d6444313bbd0f6e56b1ec02bafbd3e1ade9c8

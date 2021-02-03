@@ -1,0 +1,6 @@
+1.点击file选项里的add local repository
+2.选择文件路径
+3.点击蓝色的create a repository
+4.可仅填repository name，点击 Create repository
+5.点击蓝色的Pulish repository
+6.点击View on Github查看上传是否成功

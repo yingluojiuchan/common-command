@@ -1,0 +1,3 @@
+tab  代码补全
+ctrl+D 复制代码到下一行 
+Ctrl+Delete 编辑.移除行	

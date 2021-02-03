@@ -1,0 +1,2 @@
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+get-content ./deleterepository.txt | ForEach-Object { Invoke-WebRequest -Uri https://api.github.com/repos/$_ -Method ¡°DELETE¡± -Headers @{"Authorization"="token 47cca649a1684140569a9fca05c7aa9399ea4139"} }
