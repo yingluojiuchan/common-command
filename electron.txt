@@ -2,7 +2,6 @@
 终端输入 cnpm install electron -g  /cnpm i electron -g   全局安装electron
 写完后   npm init --yes   / npm init -y  package.json都选择同意    
 输入electron .启动项目
-
 npx electron -v 查看electron版本
 npm ls electron -g 查看全局安装的electron包版本
 

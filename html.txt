@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ！        根据代码补全生成html5最基本代码
 div#app+tab         出现<div id="app"></div>
 =======
