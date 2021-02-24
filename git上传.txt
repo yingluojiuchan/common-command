@@ -22,6 +22,16 @@ PreferredAuthentications publickey
 IdentityFile ~/.ssh/id_rsa
 Port 443
 
+<<<<<<< HEAD
+
+二、建立本地仓库
+1.进入自己的项目文件下右键选择Git Bash Here打开git命令端
+2.输入git init     文件夹下多了一个.git文件夹 ,.git目录里存储着Git管理当前目录内容所需要的仓库数据。如果你看不到，是因为它默认是隐藏文件，那你就需要设置一下让隐藏文件可见
+3.输入git add .      将项目中的所有文件添加到暂存区
+4.输入git commit -m“注释” 将文件提交到本地仓库，引号里是提交的日志
+5.输入git log        查看提交日志（包括什么人在上面时候进行了提交和合并，及操作前后有怎样的区别）
+三、创建github仓库
+=======
 三、建立本地仓库
 1.进入自己的项目文件下右键选择Git Bash Here打开git命令端
 2.输入git init     文件夹下多了一个.git文件夹 ,.git目录里存储着Git管理当前目录内容所需要的仓库数据。如果你看不到，是因为它默认是隐藏文件，那你就需要设置一下让隐藏文件可见
@@ -32,6 +42,7 @@ Port 443
 5.输入git log        查看提交日志（包括什么人什么时候在上面进行了提交和合并，及操作前后有怎样的区别）
 
 四、创建github仓库
+>>>>>>> cb4d6444313bbd0f6e56b1ec02bafbd3e1ade9c8
 1.登录github账户，选择New repository
 2.根据提示创建仓库
 3.获取仓库SSH协议或https地址并复制，输入指令：git remote add [shortname] [url]      shortname是远程仓库简称
@@ -43,6 +54,18 @@ url可以是ssh传输协议或http传输协议
 git push -u [shortname] [远程分支]      如果当前分支（本地分支）与多个主机存在追踪关系，-u选项指定远程主机名为当前分支默认主机，以后就可以不加任何参数直接使用git push
 git push -u origin master   
 
+<<<<<<< HEAD
+四、更新文件到github
+1.输入指令：git add 文件名称或者git add .
+·  git add -A  提交所有变化
+·  git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
+·  git add .  提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
+2.输入指令：git commit -m "这是注释内容"
+3.这一步从本地仓库或本地分支获取并集成(整合)，输入指令：git pull origin master
+4.如果过程中出现‘please enter a commit message…’,首先按下esc退出键然后输入 ：wq即可
+5.输入指令：git push -u origin master
+按照这些更新步骤走完之后刷新你的github主页就能看到文件已经推送到仓库，从仓库中的文件推送时间就可以知道。
+=======
 五、更新文件到github
 1.输入指令：
 git add 文件名称    追踪并提交新文件
@@ -57,4 +80,5 @@ git pull origin master      取回远程主机某个分支的最近更新，再�
 如果没有别人修改分支，即仅自己修改过，则这步跳过
 4.输入指令：git push -u origin master   把版本库的改动推送到远程仓库（Github）上
 按照这些更新步骤后刷新你的github主页就能看到文件已经推送到仓库，从仓库中的文件推送时间就可以知道。
+>>>>>>> cb4d6444313bbd0f6e56b1ec02bafbd3e1ade9c8
 如果你发现文件的推送并不是你此次更新的时间而是上次推送时间，证明你并没有更新成功，请仔细检查再重新敲一遍更新流程即可。
