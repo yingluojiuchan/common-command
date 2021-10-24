@@ -1,0 +1,8 @@
+url格式：  protocol :// hostname[:port] / [path][/ ?query][#Anchor]
+protocol  协议
+hostname  主机
+path  。若path省略，浏览器会自动加上/（path前/是服务器文件根目录），并且自动访问根目录下事先设置的默认文件（例：index.html）
+port  端口号
+query  查询
+Anchor 锚点
+

@@ -1,4 +1,4 @@
-enter or tab  代码补全 
+出现代码提示+enter or tab  代码补全 
 ctrl+/ 单行注释    该行都变为注释    /必须是26母键盘上的/
 shift+alt+a 多行注释
 shift+alt+a+选中内容      选中内容多行注释
@@ -8,3 +8,5 @@ ctrl+enter  光标跳至行尾，并enter
 ctrl+shift+L  选中内容的相同内容多选
 alt+鼠标左键 插入光标
 alt+鼠标左键+选中内容   多选选中内容
+选中代码+ctrl+[    选中代码向左tab
+选中代码+ctrl+]   选中代码向右tab

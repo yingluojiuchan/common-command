@@ -1,0 +1,4 @@
+1.vue create hello-world    vuecli3创建名为hello-world的项目
+2.选取manually select features    手动选择设置 enter确定   上下方向键选择
+3.Babel   把ES6及以上转化为ES5及以下的代码
+
